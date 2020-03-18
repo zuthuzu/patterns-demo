@@ -5,6 +5,8 @@ package ua.kpi.tef.zu.creation.prototype;
  */
 public class PrototypeDemo {
 	public static void main(String[] args) {
-
+		Relic relic = new Relic("holy flame");
+		Church church = new Church(relic);
+		System.out.println(church.getRelic());
 	}
 }
