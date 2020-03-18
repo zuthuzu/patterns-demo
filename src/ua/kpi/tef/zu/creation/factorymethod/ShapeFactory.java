@@ -3,7 +3,7 @@ package ua.kpi.tef.zu.creation.factorymethod;
 /**
  * Created by Anton Domin on 2020-03-17
  */
-public class Shaper {
+public class ShapeFactory {
 	public static Shape spawnShape(String shapeType) {
 		String shapeTypeLC = shapeType.toLowerCase();
 		switch (shapeTypeLC) {

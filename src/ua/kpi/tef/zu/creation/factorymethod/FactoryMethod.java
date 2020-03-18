@@ -9,16 +9,16 @@ public class FactoryMethod {
 	public static void main(String[] args) {
 		Shape someShape;
 
-		someShape = Shaper.spawnShape("rectangle");
+		someShape = ShapeFactory.spawnShape("rectangle");
 		someShape.draw();
 
-		someShape = Shaper.spawnShape("triangle");
+		someShape = ShapeFactory.spawnShape("triangle");
 		someShape.draw();
 
-		someShape = Shaper.spawnShape("circle");
+		someShape = ShapeFactory.spawnShape("circle");
 		someShape.draw();
 
-		someShape = Shaper.spawnShape("STAR!");
+		someShape = ShapeFactory.spawnShape("STAR!");
 		someShape.draw();
 	}
 }
