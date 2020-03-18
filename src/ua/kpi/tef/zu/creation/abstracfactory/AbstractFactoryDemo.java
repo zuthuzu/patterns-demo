@@ -3,8 +3,7 @@ package ua.kpi.tef.zu.creation.abstracfactory;
 /**
  * Created by Anton Domin on 2020-03-17
  */
-public class AbstractFactory {
-
+public class AbstractFactoryDemo {
 
 	public static void main(String[] args) {
 		Shaper factory;
