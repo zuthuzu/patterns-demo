@@ -38,7 +38,7 @@ class Squadmate {
 	}
 
 	private void executeOrder(String order, Specialties toWhom) {
-		if (specSet.contains(toWhom)) System.out.println("Comrate " + name + " executing: " + order);
+		if (specSet.contains(toWhom)) System.out.println("Comrade " + name + " executing: " + order);
 		if (nextMate != null) nextMate.processOrder(order, toWhom);
 	}
 }
