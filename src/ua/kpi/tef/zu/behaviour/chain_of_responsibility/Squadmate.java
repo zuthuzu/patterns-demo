@@ -14,6 +14,7 @@ class Squadmate {
 	public Squadmate(String name, Specialties specialty) {
 		this.name = name;
 		this.specSet.add(specialty);
+		this.specSet.add(null);
 	}
 
 	public void addSpecialty(Specialties mos) {
@@ -28,11 +29,16 @@ class Squadmate {
 		return name;
 	}
 
+	public void processOrder(String order) {
+		executeOrder(order, null);
+	}
+
 	public void processOrder(String order, Specialties toWhom) {
-		if (specSet.contains(toWhom)) {
-			System.out.println("Comrade " + name + " executing: " + order);
-		} else {
-			nextMate.processOrder(order, toWhom);
-		}
+		executeOrder(order, toWhom);
+	}
+
+	private void executeOrder(String order, Specialties toWhom) {
+		if (specSet.contains(toWhom)) System.out.println("Comrate " + name + " executing: " + order);
+		if (nextMate != null) nextMate.processOrder(order, toWhom);
 	}
 }
