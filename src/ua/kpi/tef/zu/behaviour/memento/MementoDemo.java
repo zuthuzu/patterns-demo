@@ -25,6 +25,6 @@ public class MementoDemo {
 	private static void relax(Face face) {
 		face.setEyes("drunk");
 		face.setSkin("flushed");
-		face.setMakeup("black tears");
+		face.setMakeup("panda");
 	}
 }
