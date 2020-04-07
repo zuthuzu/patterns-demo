@@ -5,6 +5,7 @@ package ua.kpi.tef.zu.structural.adapter;
  */
 public class AdapterDemo {
 	public static void main(String[] args) {
-
+		Target face = new Adapter(new Performer());
+		face.getStuff("stick");
 	}
 }
